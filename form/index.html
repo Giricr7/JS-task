@@ -16,37 +16,34 @@
 <!-- MDB -->
 <link  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
   rel="stylesheet"/>
-
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
   </head>
   <body>
     
-
      <div class="container">
-
       
       <div class="card">
         <h2>PERSONAL DETAILS</h2><br>
-        <form action="personal_info">
+        <form >
           <div class="row">
             <div class="col-6">
-              <label for="fname">First Name<sup>* </sup> </label><br>
-              <input type="text reset" placeholder="first name" required>
+              <label for="name">First Name<sup>* </sup> </label><br>
+              <input id="fname" type="text" placeholder="first name" required>
             </div>
             <div class="col-6">
               <label for="lname">Last Name<sup>* </sup> </label><br>
-              <input type="text reset" placeholder="last name" required>
+              <input id="lname" type="text " placeholder="last name" required>
             </div>
           </div><br>
 
           <div class="row">
             <div class="col-8">
               <label for="add">Address<sup>* </sup> </label><br>
-              <input type="text reset" placeholder="address" required>
+              <input id="address" type="text " placeholder="address" required>
             </div>
             <div class="col-4">
               <label for="pin">Pin Code<sup>* </sup> </label><br>
-              <input type="tel reset" placeholder="pin code" inputmode="numeric" maxlength="6" required >
+              <input id="pincode" type="tel " placeholder="pin code" inputmode="numeric" maxlength="6" required >
             </div>
           </div><br>
           
@@ -57,10 +54,10 @@
 
               <div class="btn-group btn-success" data-toggle="buttons">
                 <label class="btn btn-info">
-                    <input checked="checked" name="gender" id="male" value="1" type="radio"> Male
+                    <input checked="checked" name="gender" id="male"  type="radio"> Male
                 </label>
                 <label class="btn btn-info">
-                    <input name="gender" id="female" value="0" type="radio"> Female
+                    <input name="gender" id="female"  type="radio"> Female
                 </label>
               </div>
             
@@ -90,12 +87,12 @@
 
           <div class="row">
             <div class="col-6">
-              <label for="add">State<sup>* </sup> </label><br>
-              <input type="text reset" placeholder="state" maxlength="20"maxlength="20" required>
+              <label for="state">State<sup>* </sup> </label><br>
+              <input id="state" type="text " placeholder="state" maxlength="20"maxlength="20" required>
             </div>
             <div class="col-6">
-              <label for="pin">Country<sup>* </sup> </label><br>
-              <input type="text reset" placeholder="country" maxlength="20" required>
+              <label for="count">Country<sup>* </sup> </label><br>
+              <input id="country" type="text" placeholder="country" maxlength="20" required>
             </div>
           </div><br>
 
@@ -107,6 +104,25 @@
 
       </div>
 
+      <br><br>
+
+      <div class="card">
+        <h2>Data</h2><br>
+        <table>
+
+          <tr id="head">
+            <td>Name</td>
+            <td>Address</td>
+            <td>Gender</td>
+            <td>Food Choice</td>
+            <td>State</td>
+            <td>Country</td>
+          </tr>
+
+
+        </table>
+
+      </div>
 
      </div>
      
