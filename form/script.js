@@ -52,7 +52,7 @@ function collect_details(){
               })
     } else {
         
-        let tabl = document.getElementById('data_table')
+        var tabl = document.getElementById('data_table')
 
         let total_cells = details.length;
         let newrow = tabl.insertRow();
@@ -63,13 +63,28 @@ function collect_details(){
         })
 
 
-        tabl.appendChild(newrow)
 
+        tabl.appendChild(newrow)
+        localStorage.setItem('table', document.getElementById('data_table').innerHTML);
         document.forms['form_details'].reset();
+
+        
+
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Data added to table',
+            showConfirmButton: false,
+            timer: 2500
+          })
         }
 
-
+        
+        
+   
 
 }
 
-
+if (location.reload) {
+    document.getElementById('data_table').innerHTML=localStorage.getItem('table')
+}
