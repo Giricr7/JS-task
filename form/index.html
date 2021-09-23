@@ -24,7 +24,7 @@
       
       <div class="card">
         <h2>PERSONAL DETAILS</h2><br>
-        <form >
+        <form id="form_details">
           <div class="row">
             <div class="col-6">
               <label for="name">First Name<sup>* </sup> </label><br>
@@ -66,19 +66,19 @@
             <label for="food">Choice of Food<sup>* </sup>(choose atleast two)</label><br>
             <div class="btn-group btn-success" >
               <label class="btn btn-info">
-                  <input name="food" type="checkbox"> Pizza
+                  <input name="food" type="checkbox" value="Pizza"> Pizza
               </label>
               <label class="btn btn-info">
-                  <input name="food" type="checkbox"> Burger
+                  <input name="food" type="checkbox" value="Burger"> Burger
               </label>
               <label class="btn btn-info">
-                <input name="food" type="checkbox"> Sandwich
+                <input name="food" type="checkbox" value="Sandwich"> Sandwich
             </label>
               <label class="btn btn-info">
-                <input name="food" type="checkbox"> French Fries
+                <input name="food" type="checkbox" value="French Fries"> French Fries
             </label>
               <label class="btn btn-info">
-                <input name="food" type="checkbox"> Pasta
+                <input name="food" type="checkbox" value="Pasta"> Pasta
             </label>
             </div>
           
@@ -108,7 +108,7 @@
 
       <div class="card">
         <h2>Data</h2><br>
-        <table>
+        <table id='data_table'>
 
           <tr id="head">
             <td>Name</td>
