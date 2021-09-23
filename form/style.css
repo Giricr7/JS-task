@@ -37,13 +37,22 @@ table{
     width: 100%;
     padding: 5%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 #head td{
 border: 2px solid;
 padding: 2%;
-width: max-content;
+width: fit-content;
 border-collapse: collapse;
 text-align: center;
 font-weight: bolder;
+}
+
+tr,td{
+    border-collapse: collapse;
+    border: 2px solid;
+    word-break: break-all;
+    text-align: center;
+
 }
