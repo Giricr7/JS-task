@@ -63,4 +63,9 @@ td {
   background: blue;
   color: white;
   border-radius: 20px;
+  
+}
+
+fieldset{
+  border: 2px solid;
 }

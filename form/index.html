@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
-    <script src="/JS/script.js"></script>
+    <title>form</title>
     <link rel="stylesheet" href="/bootstrapcss/bootstrap.css">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -21,94 +20,97 @@
   <body>
     
      <div class="container">
-      
-      <div class="card">
-        <h2>PERSONAL DETAILS</h2><br>
-        <form id="form_details">
-          <div class="row">
-            <div class="col-6">
-              <label for="name">First Name<sup>* </sup> </label><br>
-              <input id="fname" type="text" placeholder="first name" required>
+      <fieldset>
+        
+        <div class="card">
+          <h2>PERSONAL DETAILS</h2><br>
+          <form id="form_details">
+            <div class="row">
+              <div class="col-6">
+                <label for="name">First Name<sup>* </sup> </label><br>
+                <input id="fname" type="text" placeholder="first name" required>
+              </div>
+              <div class="col-6">
+                <label for="lname">Last Name<sup>* </sup> </label><br>
+                <input id="lname" type="text " placeholder="last name" required>
+              </div>
+            </div><br>
+  
+            <div class="row">
+              <div class="col-8">
+                <label for="add">Address<sup>* </sup> </label><br>
+                <input id="address" type="text " placeholder="address" required>
+              </div>
+              <div class="col-4">
+                <label for="pin">Pin Code<sup>* </sup> </label><br>
+                <input id="pincode" type="tel " placeholder="pin code" inputmode="numeric" maxlength="6" required >
+              </div>
+            </div><br>
+            
+            <div class="row">
+  
+              <div class="col-4">
+                <label for="Gender">Gender<sup>* </sup></label><br>
+  
+                <div class="btn-group btn-success" data-toggle="buttons">
+                  <label class="btn btn-info">
+                      <input checked="checked" name="gender" id="male"  type="radio"> Male
+                  </label>
+                  <label class="btn btn-info">
+                      <input name="gender" id="female"  type="radio"> Female
+                  </label>
+                </div>
+              
             </div>
-            <div class="col-6">
-              <label for="lname">Last Name<sup>* </sup> </label><br>
-              <input id="lname" type="text " placeholder="last name" required>
-            </div>
-          </div><br>
-
-          <div class="row">
-            <div class="col-8">
-              <label for="add">Address<sup>* </sup> </label><br>
-              <input id="address" type="text " placeholder="address" required>
-            </div>
-            <div class="col-4">
-              <label for="pin">Pin Code<sup>* </sup> </label><br>
-              <input id="pincode" type="tel " placeholder="pin code" inputmode="numeric" maxlength="6" required >
-            </div>
-          </div><br>
-          
-          <div class="row">
-
-            <div class="col-4">
-              <label for="Gender">Gender<sup>* </sup></label><br>
-
-              <div class="btn-group btn-success" data-toggle="buttons">
+            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12" id="food_container">
+              <label for="food">Choice of Food<sup>* </sup>(choose atleast two)</label><br>
+              <div class="btn-group btn-success" >
                 <label class="btn btn-info">
-                    <input checked="checked" name="gender" id="male"  type="radio"> Male
+                    <input name="food" type="checkbox" value="Pizza"> Pizza
                 </label>
                 <label class="btn btn-info">
-                    <input name="gender" id="female"  type="radio"> Female
+                    <input name="food" type="checkbox" value="Burger"> Burger
                 </label>
+                <label class="btn btn-info">
+                  <input name="food" type="checkbox" value="Sandwich"> Sandwich
+              </label>
+                <label class="btn btn-info">
+                  <input name="food" type="checkbox" value="French Fries"> French Fries
+              </label>
+                <label class="btn btn-info">
+                  <input name="food" type="checkbox" value="Pasta"> Pasta
+              </label>
               </div>
             
           </div>
-          <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12" id="food_container">
-            <label for="food">Choice of Food<sup>* </sup>(choose atleast two)</label><br>
-            <div class="btn-group btn-success" >
-              <label class="btn btn-info">
-                  <input name="food" type="checkbox" value="Pizza"> Pizza
-              </label>
-              <label class="btn btn-info">
-                  <input name="food" type="checkbox" value="Burger"> Burger
-              </label>
-              <label class="btn btn-info">
-                <input name="food" type="checkbox" value="Sandwich"> Sandwich
-            </label>
-              <label class="btn btn-info">
-                <input name="food" type="checkbox" value="French Fries"> French Fries
-            </label>
-              <label class="btn btn-info">
-                <input name="food" type="checkbox" value="Pasta"> Pasta
-            </label>
-            </div>
-          
-        </div>
-          </div><br>
-
-          <div class="row">
-            <div class="col-6">
-              <label for="state">State<sup>* </sup> </label><br>
-              <input id="state" type="text " placeholder="state" maxlength="20"maxlength="20" required>
-            </div>
-            <div class="col-6">
-              <label for="count">Country<sup>* </sup> </label><br>
-              <input id="country" type="text" placeholder="country" maxlength="20" required>
-            </div>
-          </div><br>
-
-
+            </div><br>
+  
             <div class="row">
-           <button type="button" id="submit" onclick="collect_details()">SUBMIT</button>
-            </div>
-        </form>
-
-      </div>
-
+              <div class="col-6">
+                <label for="state">State<sup>* </sup> </label><br>
+                <input id="state" type="text " placeholder="state" maxlength="20"maxlength="20" required>
+              </div>
+              <div class="col-6">
+                <label for="count">Country<sup>* </sup> </label><br>
+                <input id="country" type="text" placeholder="country" maxlength="20" required>
+              </div>
+            </div><br>
+  
+  
+              <div class="row">
+             <button type="button" id="submit" onclick="collect_details()">SUBMIT</button>
+              </div>
+          </form>
+  
+        </div>
+     
+      </fieldset>
+     
       <br><br>
 
       <div class="card">
         <h2>Data</h2><br>
-        <table id='data_table' class="table-responsive">
+        <table id='data_table'>
 
           <tr id="head">
             <td>Name</td>
@@ -123,7 +125,7 @@
         </table><br>
 
         <div class="button d-flex justify-content-center">
-          <button class="data_remove" id="remove_data">Clear table</button>
+          <button class="data_remove" id="remove_data" onclick="delete_data()">Clear table</button>
         </div>
         
       </div>
