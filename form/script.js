@@ -114,7 +114,7 @@ if (location.reload && localStorage.getItem('rows') !== '') {
     let table = document.getElementById('data_table');
    
     
-//inserting all elements to the table
+//re-inserting all elements to the table
     for (let i = 0; i < stored_values.length; i++){
         let newrow = table.insertRow();
         stored_values[i].map((element) => {
@@ -125,14 +125,6 @@ if (location.reload && localStorage.getItem('rows') !== '') {
         table.appendChild(newrow); table.appendChild(newrow)
     }
         
-
-//appending new row
-
-    
-    
-       
-
-//appending new row
 
     
 }
